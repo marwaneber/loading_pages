@@ -1,0 +1,12 @@
+.loadBox{
+  padding:5px;
+  margin:auto;
+  text-align:center;
+}
+.circle{
+  width:35px;
+  height:35px; 
+  display:inline-block;
+  margin:auto;
+  border-radius:50%;
+}
