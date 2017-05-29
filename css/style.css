@@ -13,8 +13,7 @@ header{
 }
 .logo_img{
 	margin: 10px;
-	max-width:100%;
-	width:23%;
+	width:25%;
 	transition:1s linear all;
 	-moz-transition:1s linear all;
 	-webkit-transition:1s linear all;
