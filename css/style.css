@@ -14,13 +14,14 @@ header{
 .logo_img{
 	margin: 10px;
 	max-width:100%;
+	width:23%;
 	transition:1s linear all;
 	-moz-transition:1s linear all;
 	-webkit-transition:1s linear all;
 }
 .logo_img:hover{
 	margin:15px;
-	width:90%;
+	width:20%;
 }
 h2{
 	font-size: 37px;
