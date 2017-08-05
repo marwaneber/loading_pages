@@ -1,32 +1,25 @@
-body{
+body {
 	margin: 0;
 	padding: 0;
 	font-family: Arial;
 	background: #efefef;
 }
-header{
+header {
 	text-align:center;
 	width: 70%;
 	padding: 90px 20px;
 	background: #607D8B;
 	margin: 80px auto;
 }
-.logo_img{
+.logo_img {
 	margin: 10px;
-	width:25%;
-	transition:1s linear all;
-	-moz-transition:1s linear all;
-	-webkit-transition:1s linear all;
+	width: 25%;
 }
-.logo_img:hover{
-	margin:15px;
-	width:20%;
-}
-h2{
+h2 {
 	font-size: 37px;
 	color: #ddd;
 }
-p{
+p {
 	background: #b5e61d;
 	padding: 20px;
 	font-size: 30PX;
