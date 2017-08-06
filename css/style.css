@@ -2,29 +2,34 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Arial;
-	background: #efefef;
+	background: #fff;
 }
 header {
 	text-align:center;
 	width: 70%;
 	padding: 90px 20px;
-	background: #607D8B;
+	background: #6C79A5;
 	margin: 80px auto;
+	padding: 20px;
 }
 .logo_img {
 	margin: 10px;
 	width: 25%;
+	border: 5px solid #fff;
 }
 h2 {
 	font-size: 37px;
 	color: #ddd;
+	margin: 0;
+	margin-bottom: 20px;
 }
 p {
-	background: #b5e61d;
-	padding: 20px;
-	font-size: 30PX;
-	margin: auto;
+	background: #fff;
+	padding: 10px;
+	font-size: 30px;
+	margin: 0;
 	border-radius: 6px;
-	width: 40%;
-	color: #607d8b;
+	width: 25%;
+	color: #363636;
+	border-left: 5px solid;
 }
