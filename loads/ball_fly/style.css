@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+/* styling the full box. */
+.box {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: padding-box;
+    box-sizing: content-box;
+    z-index: 99;
+    margin: 0;
+    padding: 0; 
+    background: #555eee;
+    position: relative
+}
+
+/* styling the ball. */
+.box .ball {
+    width: 30px;
+    height: 30px;
+    top: 49vh;
+    left: 48vw;
+    border-radius: 50%;
+    background: #efd;
+    transform: scale(1);    
+    animation: zooming 0.5s ease-in infinite;
+    position: absolute;
+}
+
+
+/* hidden the contents div. */
+.contents {
+    display: none
+}
+
+/* bulid animations for ball and shadow's. */
+@keyframes zooming {
+    from {
+        top: 46.5vh;
+        transform: scale(2.5);
+        opacity: 0;
+    }
+
+    50% {
+        top: 47vh;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        top: 46.5vh;
+        transform: scale(2.5);      
+        opacity: 0;  
+    }
+}
