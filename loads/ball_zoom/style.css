@@ -19,13 +19,14 @@ body {
 .box .ball {
     width: 30px;
     height: 30px;
-    top: 49vh;
-    left: 48vw;
+    top: calc(50vh - 7.5px);
+    left: calc(50vw - 7.5px);
     border-radius: 50%;
-    background: #efd;
-    transform: scale(1);    
-    animation: zooming 0.5s ease-in infinite;
+    background: #fff;
+    transform: scale(.5);    
+    animation: zooming 1s linear infinite;
     position: absolute;
+    border: 1px solid #eee;
 }
 
 
@@ -34,23 +35,20 @@ body {
     display: none
 }
 
-/* bulid animations for ball and shadow's. */
+/* bulid animations for ball. */
 @keyframes zooming {
     from {
-        top: 46.5vh;
+        top: 50vh;
+        left: 50vw;
+        transform: scale(0);
+        opacity: 1;
+        border-width: 5px;
+    }
+    to {
+        top: calc(50vh - 37.5px);
+        left: calc(50vw - 37.5px);
         transform: scale(2.5);
         opacity: 0;
-    }
-
-    50% {
-        top: 47vh;
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    to {
-        top: 46.5vh;
-        transform: scale(2.5);      
-        opacity: 0;  
+        border-width: 10px;
     }
 }

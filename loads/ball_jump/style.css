@@ -19,25 +19,22 @@ body {
 .box .ball {
     width: 30px;
     height: 30px;
-    top: 49vh;
-    left: 48vw;
+    top: 50vh;
+    left: 49vw;
     border-radius: 50%;
-    background: #48f;
-    animation: jumping 0.5s ease infinite;
+    animation: jumping 2s ease infinite;
     position: absolute;
+    z-index: 5
 }
 
-/* set shadow for ball. */
-.box .shadow {
-    top: 51.5vh;
-    left: 48vw;
-    width: 30px;
-    height: 2px;
-    background: #8a8a8a;
+/* styling flour. */
+.box .flour {
+    top: 50vh;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    background: #44885F;
     position: absolute;
-    border-radius: 50%;
-    animation: shadow_anime 0.5s linear infinite;
-    opacity: 0.9;
 }
 
 /* hidden the contents div. */
@@ -48,32 +45,17 @@ body {
 /* bulid animations for ball and shadow's. */
 @keyframes jumping {
     from {
-        top: 47vh;
+        top: calc(55vh - 15px);
+        background: #eee
     }
 
     50% {
-        top: 44vh;
+        top: calc(45vh - 15px);
+        background: #44885F
     }
 
     to {
-        top: 47vh;
-    }
-}
-@keyframes shadow_anime {
-    0% {
-        opacity: 1;
-        width: 5px;
-        left: 49vw;
-    }
-    50% {
-        opacity: .2;
-        width: 30px;
-        left: 48vw;
-    }
-    100% {
-        opacity: 1;
-        width: 5px;
-        left: 49vw;
-
+        top: calc(55vh - 15px);
+        background: #eee
     }
 }
