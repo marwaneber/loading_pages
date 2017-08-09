@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+/* styling the full box. */
+.box {
+    width: calc(50vw + 100px);
+    height: calc(50vh + 50px);
+    box-sizing: content-box;
+    z-index: 99;
+    margin: 0;
+    background: #f42;
+    padding: calc(50vh - 50px) 0 0 calc(50vw - 100px);
+}
+
+/* styling the eye. */
+.box .eye {
+    width: 100px;
+    height: 100px;
+    margin: auto 5px;
+    border-radius: 50%;
+    background: #fff;
+    float: left;
+    position: relative;
+    border-top: 5px solid #444
+}
+
+/* styling flour. */
+.box .eye .pupil {
+    width: 40%;
+    height: 40%;
+    background: #444;
+    border: 10px solid orange;
+    position: absolute;
+    box-sizing: border-box; 
+    border-radius: 50%;
+    top: 30%;
+    left: 5%; 
+    animation: look 1s cubic-bezier(.95,.05,.95,.05) infinite
+}
+
+/* hidden the contents div. */
+.contents {
+    display: none
+}
+
+/* bulid animations for ball and shadow's. */
+@keyframes look {
+    from {
+        left: 55%;
+    }
+
+    50% {
+        left: 5%;
+    }
+
+    to {        
+        left: 55%;
+    }
+}
