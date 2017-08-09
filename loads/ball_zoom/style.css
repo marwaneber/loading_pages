@@ -4,31 +4,42 @@ body {
 
 /* styling the full box. */
 .box {
-    width: 100vw;
-    height: 100vh;
-    box-sizing: padding-box;
+    height: calc(50vh + 50px);
+    width: calc(50vw + 50px);
+    background: #555eee;
+    margin: 0;
+    padding-top: calc(50vh - 50px);
+    padding-left: calc(50vw - 50px);
     box-sizing: content-box;
     z-index: 99;
-    margin: 0;
-    padding: 0; 
-    background: #555eee;
-    position: relative
 }
 
 /* styling the ball. */
 .box .ball {
-    width: 30px;
-    height: 30px;
-    top: calc(50vh - 7.5px);
-    left: calc(50vw - 7.5px);
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
     border-radius: 50%;
-    background: #fff;
-    transform: scale(.5);    
-    animation: zooming 1s linear infinite;
-    position: absolute;
-    border: 1px solid #eee;
+    border: 12px dashed #28148d;
+    /* animation: zoom 2s cubic-bezier(1,0,0,1) infinite; */
+    animation: zoom 2s linear infinite;
+    position: relative;
 }
 
+/* styling the fill of ball. */
+.box .ball .fill {
+    width: 40%;
+    height: 40%;
+    box-sizing: border-box;
+    border-radius: 0;
+    border: 5px solid #eee;
+    background: #eee;
+    top: 30%;
+    left: 30%;
+    position: absolute;
+    /* animation: filling 2s cubic-bezier(.51,.51,0,1) infinite; */
+    animation: filling 2s linear infinite;
+}
 
 /* hidden the contents div. */
 .contents {
@@ -36,19 +47,30 @@ body {
 }
 
 /* bulid animations for ball. */
-@keyframes zooming {
+@keyframes filling {
     from {
-        top: 50vh;
-        left: 50vw;
-        transform: scale(0);
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
         opacity: 1;
-        border-width: 5px;
     }
     to {
-        top: calc(50vh - 37.5px);
-        left: calc(50vw - 37.5px);
-        transform: scale(2.5);
-        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .5;
         border-width: 10px;
+        border-radius: 50%
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: rotate(-45deg)
+    }
+    to {
+        transform: rotate(45deg)
     }
 }

@@ -10,7 +10,7 @@ body {
     box-sizing: content-box;
     z-index: 99;
     margin: 0;
-    padding: 0; 
+    padding: 0;    
     background: #eee;
     position: relative
 }
@@ -20,16 +20,16 @@ body {
     width: 30px;
     height: 30px;
     top: 50vh;
-    left: 49vw;
+    left: calc(50vw - 15px);
     border-radius: 50%;
-    animation: jumping 2s ease infinite;
+    animation: jumping 2s cubic-bezier(.86,0,.07,1) infinite;
     position: absolute;
     z-index: 5
 }
 
 /* styling flour. */
 .box .flour {
-    top: 50vh;
+    bottom: 0;
     left: 0;
     width: 100vw;
     height: 50vh;
@@ -45,17 +45,17 @@ body {
 /* bulid animations for ball and shadow's. */
 @keyframes jumping {
     from {
-        top: calc(55vh - 15px);
-        background: #eee
-    }
-
-    50% {
-        top: calc(45vh - 15px);
+        top: calc(50vh - (80px + 15px));
         background: #44885F
     }
 
-    to {
-        top: calc(55vh - 15px);
+    50% {
+        top: calc(50vh + (20px - 15px));
         background: #eee
+    }
+
+    to {
+        top: calc(50vh - (80px + 15px));
+        background: #44885F
     }
 }
