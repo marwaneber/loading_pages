@@ -6,7 +6,7 @@ body {
 .box {
     height: calc(50vh + 50px);
     width: calc(50vw + 50px);
-    background: #555eee;
+    background: #DC048C;
     margin: 0;
     padding-top: calc(50vh - 50px);
     padding-left: calc(50vw - 50px);
@@ -20,21 +20,24 @@ body {
     height: 100px;
     box-sizing: border-box;
     border-radius: 50%;
-    border: 12px dotted #28148d;
-    animation: zoom 2s cubic-bezier(.68,-0.55,.27,1.55) infinite;
+    border: 12px solid #DC048C;
+    box-shadow: 0 0 40px 0px #210026;
+    animation: zoom 1s cubic-bezier(.79,.14,.15,.86) infinite;
+    background: #fff;
+    overflow: hidden;
     position: relative;
 }
 
 /* styling the fill of ball. */
 .box .ball .fill {
-    width: 0;
-    height: 0;
+    width: 100%;
+    height: 10%;
     border-radius: 0;
-    background: #eee;
-    top: 30%;
-    left: 30%;
-    animation: filling 2s cubic-bezier(.86,0,.07,1) infinite;
+    background: #03A696;
+    bottom: 0;
+    left: 0;
     position: absolute;
+    animation: filling 1.5s ease infinite;
 }
 
 /* hidden the contents div. */
@@ -45,28 +48,18 @@ body {
 /* bulid animations for ball. */
 @keyframes filling {
     from {
-        top: 50%;
-        left: 50%;
-        width: 0;
-        height: 0;
-        opacity: 1;
+        height: 10%;
     }
     to {
-        top: 0;
-        left: 0;
-        width: 100%;
         height: 100%;
-        opacity: .5;
-        border-width: 10px;
-        border-radius: 50%
     }
 }
 
 @keyframes zoom {
     from {
-        transform: rotate(-45deg)
+        transform: rotate(-15deg)
     }
     to {
-        transform: rotate(45deg)
+        transform: rotate(15deg)
     }
 }
