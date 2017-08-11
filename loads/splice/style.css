@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+/* styling the full box. */
+.box {
+    width: calc(50vw + 100px);
+    height: calc(50vh + 50px);
+    box-sizing: content-box;
+    z-index: 99;
+    margin: 0;
+    background: #ff2;
+    padding: calc(50vh - 50px) 0 0 calc(50vw - 100px);
+}
+
+/* styling the eye. */
+.box .full .half {
+    width: 0px;
+    height: 0px;
+    margin: auto 5px;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    border: 50px solid #444;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(45deg);
+}
+
+.box .full .half:nth-child(1) {
+    transform: rotate(225deg)
+}
+
+/* hidden the contents div. */
+.contents {
+    display: none
+}
+
+/* bulid animations for ball and shadow's. */
+@keyframes split {
+    from {
+        left: 55%;
+    }
+
+    to {        
+        left: 55%;
+    }
+}
