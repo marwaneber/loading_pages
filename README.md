@@ -1,18 +1,51 @@
-### Loading Pages.
-Big collection of loading pages, using only JavaScript, CSS3 and HTML5.
+# Loaders Pages.
+Loaders Pgaes is a collection of loaders , using only CSS3 and HTML5.
 
 ## Files Tree.
-|____ Loads
-     |____ Ball Jump
-     |____ Ball Zoom
-     |____ Fill The Ball
-     |____ Look At Me
+Loaders
+├── Ball Jump
+│   ├── index.html
+│   ├── main.js
+│   └── style.css
+├── Ball Zoom
+│   ├── index.html
+│   ├── main.js
+│   └── style.css
+├── fill The Ball
+│   ├── index.html
+│   ├── main.js
+│   └── style.css
+├── Look At Me
+│   ├── index.html
+│   ├── main.js
+│   └── style.css
+└── Split Ball
+    ├── index.html
+    ├── main.js
+    └── style.css
 
-Every load in the master loads have same structures (index.html, style.css and main.js).
+As you see every loader in the loaders have same structures (index.html, style.css and main.js).
 
-### The real names, in the repository.
-|____ loads
-    |____ ball_jump
-    |____ ball_zoom
-    |____ fill_the_ball
-    |____ look_at_me
+## The real names, in the repository.
+
+loaders
+├── ball_jump
+│   ├── index.html
+│   ├── main.js
+│   └── style.css
+├── ball_zoom
+│   ├── index.html
+│   ├── main.js
+│   └── style.css
+├── fill_the_ball
+│   ├── index.html
+│   ├── main.js
+│   └── style.css
+├── look_at_me
+│   ├── index.html
+│   ├── main.js
+│   └── style.css
+└── split_ball
+    ├── index.html
+    ├── main.js
+    └── style.css

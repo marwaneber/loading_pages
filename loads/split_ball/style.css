@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+}
+
+/* styling the box. */
+.box {
+    width: calc(50vw + 50px);
+    height: calc(50vh + 50px);
+    box-sizing: content-box;
+    z-index: 99;
+    margin: 0;
+    background: #ff2;
+    padding: calc(50vh - 50px) 0 0 calc(50vw - 50px);
+}
+
+/* styling the full div*/
+.box .full {
+    width: 110px;
+    height: 100px;
+    animation: turn 1s cubic-bezier(.95,.05,.8,.04) infinite; 
+    position: relative
+}
+
+/* styling the eye. */
+.box .full .half {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    border: 50px solid #222;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.box .full .second {
+    transform: rotate(45deg);
+    right: 0px; 
+    animation: splitR .5s cubic-bezier(.68,-0.55,.27,1.55) infinite
+    
+}
+
+.box .full .first {
+    transform: rotate(225deg);
+    left: 0px; 
+    animation: splitL .5s cubic-bezier(.68,-0.55,.27,1.55) infinite
+}
+
+/* hidden the contents div. */
+.contents {
+    display: none
+}
+
+/* bulid animations for ball and shadow's. */
+@keyframes splitR {
+    from {
+        right: 5px;
+    }
+
+    to {        
+        right: 0px;
+    }
+}
+
+@keyframes splitL {
+    from {
+        left: 5px;
+    }
+
+    to {        
+        left: 0px;
+    }
+}
+
+@keyframes turn {
+    from {
+        transform: rotate(-45deg);        
+    }
+
+    to {        
+        transform: rotate(135deg);    
+    }
+}
