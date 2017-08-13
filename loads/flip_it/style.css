@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+/* styling the full box. */
+.box {
+    height: calc(50vh + 50px);
+    width: calc(50vw + 50px);
+    background: #fefefe;
+    margin: 0;
+    padding-top: calc(50vh - 50px);
+    padding-left: calc(50vw - 50px);
+    box-sizing: content-box;
+    z-index: 99;
+}
+
+/* styling the ball. */
+.box .ball {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #5CCBA9;
+    position: relative;
+}
+
+/* styling the fill of ball. */
+.box .ball .flip {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    border: 50px double #fff;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid transparent;
+    transform: rotate(45deg);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    animation: fliping 1.5s cubic-bezier(.52,.72,.67,.38) infinite;
+}
+
+/* hidden the contents div. */
+.contents {
+    display: none
+}
+
+/* bulid animations for ball. */
+@keyframes fliping {
+    from {
+        transform: rotateY(-45deg) rotate(45deg);
+    }
+    to {
+        transform: rotateY(315deg) rotate(45deg);
+    }
+}
