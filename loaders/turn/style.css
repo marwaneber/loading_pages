@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+
+/* styling the full box. */
+.box {
+    height: calc(50vh + 50px);
+    width: calc(50vw + 50px);
+    background: #55ee55;
+    margin: 0;
+    padding-top: calc(50vh - 50px);
+    padding-left: calc(50vw - 50px);
+    box-sizing: content-box;
+    z-index: 99;
+}
+
+/* styling the ball. */
+.box .ball {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 15px double #253324;
+    animation: turn 4s cubic-bezier(.68,-0.55,.27,1.55) infinite;
+    position: relative;
+}
+
+/* styling the fill of ball. */
+.box .ball .fill {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    background: #2A2B27;
+    top: 0%;
+    left: 30%;
+    animation: center_it 1s cubic-bezier(.86,0,.07,1) infinite;
+    position: absolute;
+}
+
+/* hidden the contents div. */
+.contents {
+    display: none
+}
+
+/* bulid animations for ball. */
+@keyframes center_it {
+    from {
+        top: 30%;
+    }
+    50% {
+    			top: -20%;
+    }
+    to {
+        top: 30%;
+    }
+}
+
+@keyframes turn {
+    from {
+        transform: rotate(0deg)
+    }
+    25% {
+    			transform: rotate(90deg)
+    }
+    50% {
+    			transform: rotate(180deg)
+    }
+    75% {
+    			transform: rotate(270deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}

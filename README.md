@@ -1,48 +1,20 @@
 # Loaders Pages.
 Loaders Pgaes is a collection of loaders , using only CSS3 and HTML5.
 
-## Files Tree.
+## The tree files of Loaders, in the repository.
 
-    Loaders/
-    ├── Ball Jump
-    │   ├── index.html
-    │   ├── main.js
-    │   └── style.css
-    ├── Ball Zoom
-    │   ├── index.html
-    │   ├── main.js
-    │   └── style.css
-    ├── fill The Ball
-    │   ├── index.html
-    │   ├── main.js
-    │   └── style.css
-    ├── Look At Me
-    │   ├── index.html
-    │   ├── main.js
-    │   └── style.css
-    ├── Split Ball
-    │   ├── index.html
-    │   ├── main.js
-    │   └── style.css
-    └── Fill It
-        ├── index.html
-        ├── main.js
-        └── style.css
-
-As you see every loader in the loaders have same structures (index.html, style.css and main.js).
-
-## The real names, in the repository.
+As you see in below every loader in the loaders have same structures (index.html, style.css and main.js).
 
     loaders
-    ├── ball_jump
+    ├── fill
     │   ├── index.html
     │   ├── main.js
     │   └── style.css
-    ├── ball_zoom
+    ├── flip
     │   ├── index.html
     │   ├── main.js
     │   └── style.css
-    ├── fill_the_ball
+    ├── jump
     │   ├── index.html
     │   ├── main.js
     │   └── style.css
@@ -50,11 +22,16 @@ As you see every loader in the loaders have same structures (index.html, style.c
     │   ├── index.html
     │   ├── main.js
     │   └── style.css
-    ├── split_ball
+    ├── split
     │   ├── index.html
     │   ├── main.js
     │   └── style.css
-    └── fill_it
+    ├── turn
+    │   ├── index.html
+    │   ├── main.js
+    │   └── style.css
+    └── zoom
         ├── index.html
         ├── main.js
         └── style.css
+
