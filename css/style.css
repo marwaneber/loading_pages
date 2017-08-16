@@ -1,17 +1,23 @@
+/* styling of body */
 body {
 	margin: 0;
 	padding: 0;
 	font-family: Arial;
 	background: #fff;
 }
+
+/* styling of header */
 header {
 	width: auto;
 	height: 100px;
 	padding: 10px;
-	background: #24FF9C;
+	background: #5dbcd2;
 	overflow: auto;
 	margin: 0;
 }
+
+/* styling of logo image */
+
 header .logo_img {
 	margin: 10px;
 	height: 80px;
@@ -20,6 +26,9 @@ header .logo_img {
 	box-sizing: border-box;
 	border: 5px solid #fff;
 }
+
+/* styling of heading of logo */
+
 header h2 {
 	font-size: 35px;
 	color: #fff;
@@ -28,9 +37,11 @@ header h2 {
 	margin: 0;
 }
 
+/* styling of container */
+
 .container {
 	width: 80%;
-	border: 5px double #24fffc;
+	border: 5px dashed #24fffc;
 	padding: 0;
 	text-align: center;
 	margin: 10% auto;
