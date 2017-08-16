@@ -5,31 +5,51 @@ body {
 	background: #fff;
 }
 header {
-	text-align:center;
-	width: 70%;
-	padding: 90px 20px;
-	background: #6C79A5;
-	margin: 80px auto;
-	padding: 20px;
+	width: auto;
+	height: 100px;
+	padding: 10px;
+	background: #24FF9C;
+	overflow: auto;
+	margin: 0;
 }
-.logo_img {
+header .logo_img {
 	margin: 10px;
-	width: 25%;
+	height: 80px;
+	width: auto;
+	float: left;
+	box-sizing: border-box;
 	border: 5px solid #fff;
 }
-h2 {
-	font-size: 37px;
-	color: #ddd;
+header h2 {
+	font-size: 35px;
+	color: #fff;
+	float: left;
+	line-height: 100px;
 	margin: 0;
-	margin-bottom: 20px;
 }
-p {
-	background: #fff;
-	padding: 10px;
-	font-size: 30px;
-	margin: 0;
-	border-radius: 6px;
-	width: 25%;
-	color: #363636;
-	border-left: 5px solid;
+
+.container {
+	width: 80%;
+	border: 5px double #24fffc;
+	padding: 0;
+	text-align: center;
+	margin: 10% auto;
+}
+
+.container .box{
+  width:80%;
+  padding:5px;
+  margin:0 auto;
+}
+
+.container .box .img{
+  width:180px;
+  height:130px;
+  margin:30px;
+  color: #244;
+  background:#24ffcc;
+  font: 25px 'Arial';
+  line-height: 130px;
+  display:inline-block;
+  border-bottom:10px solid #24ccff;
 }
