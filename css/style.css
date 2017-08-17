@@ -1,8 +1,11 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display|Ubuntu');
+
 /* styling of body */
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Arial;
+    font-family: 'Ubuntu', sans-serif;
 	background: #fff;
 }
 
@@ -10,8 +13,7 @@ body {
 header {
 	width: auto;
 	height: 100px;
-	padding: 10px;
-	background: #5dbcd2;
+	background: #00CDDE;
 	overflow: auto;
 	margin: 0;
 }
@@ -41,26 +43,28 @@ header h2 {
 
 .container {
 	width: 80%;
-	border: 5px dashed #24fffc;
 	padding: 0;
 	text-align: center;
 	margin: 10% auto;
 }
 
-.container .box{
-  width:80%;
-  padding:5px;
-  margin:0 auto;
+.container .subtitle {
+	font-size: 45px
 }
 
-.container .box .img{
-  width:180px;
-  height:130px;
-  margin:30px;
-  color: #244;
-  background:#24ffcc;
-  font: 25px 'Arial';
+.container .box{
+  padding: 0;
+  margin: 0 auto;
+}
+
+.container .box .loader{
+  width: 380px;
+  height: 380px;
+  margin: 30px;
+  color: #3498db;
+  background: #24ccff;
+  font: 45px 'Arial';
   line-height: 130px;
-  display:inline-block;
-  border-bottom:10px solid #24ccff;
+  display: inline-block;
+  border: 5px solid #3498db;
 }
