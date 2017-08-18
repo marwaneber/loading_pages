@@ -21,8 +21,8 @@ header {
 /* styling of logo image */
 
 header .logo_img {
-	margin: 10px;
-	height: 80px;
+	margin: 20px;
+	height: 60px;
 	width: auto;
 	float: left;
 	box-sizing: border-box;
@@ -45,26 +45,33 @@ header h2 {
 	width: 80%;
 	padding: 0;
 	text-align: center;
-	margin: 10% auto;
+	margin: 0 auto 30px auto;
 }
 
 .container .subtitle {
-	font-size: 45px
+	font-size: 45px;
+	margin: 0;
+	padding: 20px;
 }
 
 .container .box{
   padding: 0;
+  width: 100%;
   margin: 0 auto;
+  text-align: left
 }
 
 .container .box .loader{
-  width: 380px;
-  height: 380px;
-  margin: 30px;
-  color: #3498db;
+  width: 25%;
+  height: calc(60vw / 3);
+  margin: calc(25% / 12);
+  color: #444;
   background: #24ccff;
-  font: 45px 'Arial';
+  font: 100% 'Arial';
+  text-align: center;
   line-height: 130px;
   display: inline-block;
-  border: 5px solid #3498db;
+  border: 2px solid #3498db;
+  box-sizing: border-box;
+  box-sizing: content-box;
 }
