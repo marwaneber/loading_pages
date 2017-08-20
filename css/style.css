@@ -43,26 +43,26 @@ nav {
 		background: #81FF00;
 		height: 70px;
 		float: right;
-		margin: 0;
-	}
-	.menuBtn {
+		margin: 15px;
+}
+.menuBtn {
 		height: 50px;
 		margin: 10px;
 		width: 60px;
 		box-sizing: border-box;
 		border-radius: 6px;
 		border: 2px solid #fff;
-	}
+}
 	
-	.menuBtn .row {
+.menuBtn .row {
 		background: #fff;
 		height: 10px;
 		border-radius: 6px;
 		width: 50px;
 		margin: 4px auto;
-	}
+}
 	
-	nav ul {
+nav ul {
 		list-style-type: none;
 		padding: 0px;
 		margin: 0;
@@ -72,19 +72,20 @@ nav {
 		background: #eee;
 		transition: all .5s ease-out;
 		position:absolute;
-	}
-	nav ul li {
+}
+
+nav ul li {
 		padding: 10px 20px;
 		border-bottom: 2px solid #5CB300
-	}
+}
 
 
-	nav ul li .link {
+nav ul li .link {
 		padding: 0px;
 		font-size: 22px;
 		color: #5cb300;
 		text-decoration: underline;
-	}
+}
 
 /* styling of container */
 
