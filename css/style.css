@@ -1,24 +1,27 @@
-/* importing fonts */
+/* importing of fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display|Ubuntu');
 
-/* styling of body */
+/* styling body */
+
 body {
 	margin: 0;
 	padding: 0;
-    font-family: 'Ubuntu', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	background: #fff;
 }
 
-/* styling of header */
+/* styling header */
+
 header {
 	width: auto;
 	height: 100px;
-	background: #00CDDE;
+	background: #083A84;
 	overflow: auto;
 	margin: 0;
 }
 
-/* styling of logo image */
+/* styling logo image */
 
 header .logo_img {
 	margin: 20px;
@@ -29,7 +32,7 @@ header .logo_img {
 	border: 5px solid #fff;
 }
 
-/* styling of heading of logo */
+/* styling heading of logo */
 
 header h2 {
 	font-size: 35px;
@@ -39,12 +42,17 @@ header h2 {
 	margin: 0;
 }
 
+/* styling navbar */
+
 nav {
-		background: #81FF00;
+		background: inherit;
 		height: 70px;
 		float: right;
 		margin: 15px;
 }
+
+/* styling button of menu */
+
 .menuBtn {
 		height: 50px;
 		margin: 10px;
@@ -53,41 +61,40 @@ nav {
 		border-radius: 6px;
 		border: 2px solid #fff;
 }
-	
 .menuBtn .row {
 		background: #fff;
-		height: 10px;
+		height: 6px;
 		border-radius: 6px;
 		width: 50px;
-		margin: 4px auto;
+		margin: 8px auto;
 }
+	
+/* styling list (in navbar) */
 	
 nav ul {
 		list-style-type: none;
 		padding: 0px;
 		margin: 0;
-		top: 70px;
+		top: 0px;
 		right: 0;
+		opacity: 0;
 		z-index: -10;
-		background: #eee;
+		background: #083A84;
 		transition: all .5s ease-out;
 		position:absolute;
 }
-
 nav ul li {
 		padding: 10px 20px;
-		border-bottom: 2px solid #5CB300
+		border-bottom: 2px solid #fff
 }
-
-
 nav ul li .link {
 		padding: 0px;
 		font-size: 22px;
-		color: #5cb300;
+		color: #fff;
 		text-decoration: underline;
 }
 
-/* styling of container */
+/* styling container */
 
 .container {
 	width: 80%;
@@ -96,26 +103,26 @@ nav ul li .link {
 	margin: 0 auto 30px auto;
 }
 
+/* styling subtitle of container */
+
 .container .subtitle {
 	font-size: 45px;
 	margin: 0;
 	padding: 20px;
 }
-
 .container .box{
   padding: 0;
   width: 100%;
   margin: 0 auto;
   text-align: left
 }
-
 .container .box .loader{
   width: 25%;
   height: calc(60vw / 3);
   margin: calc(25% / 12);
   color: #444;
   background: #24ccff;
-  font: 100% 'Arial';
+  font: 180% 'Arial';
   text-align: center;
   line-height: 130px;
   display: inline-block;
@@ -123,4 +130,3 @@ nav ul li .link {
   box-sizing: border-box;
   box-sizing: content-box;
 }
-
