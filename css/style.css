@@ -78,7 +78,7 @@ nav ul {
 		top: 0px;
 		right: 0;
 		opacity: 0;
-		z-index: -10;
+		z-index: -1;
 		background: #083A84;
 		transition: all .5s ease-out;
 		position:absolute;
