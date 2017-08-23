@@ -15,8 +15,8 @@ body {
 
 header {
 	width: auto;
-	height: 100px;
-	background: #083A84;
+	height: 80px;
+	background: #00FF8A;
 	overflow: auto;
 	margin: 0;
 }
@@ -24,7 +24,7 @@ header {
 /* styling logo image */
 
 header .logo_img {
-	margin: 20px;
+	margin: 10px;
 	height: 60px;
 	width: auto;
 	float: left;
@@ -38,7 +38,7 @@ header h2 {
 	font-size: 35px;
 	color: #fff;
 	float: left;
-	line-height: 100px;
+	line-height: 80px;
 	margin: 0;
 }
 
@@ -48,7 +48,7 @@ nav {
 		background: inherit;
 		height: 70px;
 		float: right;
-		margin: 15px;
+		margin: 5px;
 }
 
 /* styling button of menu */
@@ -65,8 +65,8 @@ nav {
 		background: #fff;
 		height: 6px;
 		border-radius: 6px;
-		width: 50px;
-		margin: 8px auto;
+		width: 40px;
+		margin: 7px auto;
 }
 	
 /* styling list (in navbar) */
@@ -78,10 +78,10 @@ nav ul {
 		top: 0px;
 		right: 0;
 		opacity: 0;
-		z-index: -1;
-		background: #083A84;
+		background: #00dd8a;
 		transition: all .5s ease-out;
 		position:absolute;
+		z-index: -1;
 }
 nav ul li {
 		padding: 10px 20px;
@@ -91,7 +91,7 @@ nav ul li .link {
 		padding: 0px;
 		font-size: 22px;
 		color: #fff;
-		text-decoration: underline;
+		text-decoration: none;
 }
 
 /* styling container */
@@ -101,6 +101,7 @@ nav ul li .link {
 	padding: 0;
 	text-align: center;
 	margin: 0 auto 30px auto;
+	transition: all .5s ease-out;
 }
 
 /* styling subtitle of container */
@@ -111,18 +112,18 @@ nav ul li .link {
 	padding: 20px;
 }
 .container .box{
-  padding: 0;
+  padding: 0 0 20px 0;
   width: 100%;
   margin: 0 auto;
   text-align: left
 }
 .container .box .loader{
-  width: 25%;
-  height: calc(60vw / 3);
-  margin: calc(25% / 12);
+  width: 29%;
+  height: calc(70vw / 3);
+  margin: calc(29% / 12) 0 0 calc(28% / 12);
   color: #444;
   background: #24ccff;
-  font: 180% 'Arial';
+  font: 130% 'Arial';
   text-align: center;
   line-height: 130px;
   display: inline-block;
