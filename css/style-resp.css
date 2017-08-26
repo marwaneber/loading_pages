@@ -17,6 +17,6 @@
 	.container .box .loader{
 	  width: 30%;
 	  height: calc(85vw / 3);
-	  margin: 2% 0 0 1%;
+	  margin: 2px 0 0 1px;
 	}
 }
